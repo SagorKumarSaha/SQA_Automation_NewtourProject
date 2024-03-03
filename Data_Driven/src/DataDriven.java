@@ -15,6 +15,8 @@ public class DataDriven {
 		ChromeDriver driver = new ChromeDriver();
 		
 		driver.get("https://demo.guru99.com/test/newtours/");
+		driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		
 		FileInputStream file = new FileInputStream("C:\\Users\\USER\\Desktop\\Registration.xlsx");
 		
